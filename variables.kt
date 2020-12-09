@@ -15,5 +15,21 @@ fun main() {
 
     println("$x\n$k")
 
+   
+    /*
+    For a variable to hold null it must be explicitly specified as nullable.
+    A variable can be specified as nullable by appending a ? to its type.
+    We can access a nullable variable by using the ?. operator.
+    We can use the ?: operator to specify an alternative value to use
+    if a variable is null.
+    */
+    var fooNullable: String? = "abc"
+    println(fooNullable?.length) // => 3
+    println(fooNullable?.length ?: -1) // => 3
+    fooNullable = null
+    println(fooNullable?.length) // => null
+    //Elvis Operator
+    println(fooNullable?.length ?: -1) // => -1
 
+    
 }

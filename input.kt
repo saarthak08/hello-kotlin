@@ -3,16 +3,22 @@ import java.util.Scanner;
 fun main() {
     var reader=Scanner(System.`in`);
 
-    println("Enter a number: ");
+    print("Enter a number: ");
     var x=reader.nextInt();
 
     println("The entered number: $x");
 
-    println("Enter another number: ");
+    print("Enter another number: ");
     var y=Integer.valueOf(readLine());
     println("The entered number: $y");
 
     println("Sum: ${sum(x,y)}")
+
+    print("Enter any string: ");
+    reader.nextLine();
+    var m=reader.nextLine();
+    println("String length: "+getStringLength(m));
+
 }
 
 
@@ -26,6 +32,7 @@ fun getStringLength(obj: Any): Int? {
     return null
 }
 
+//Function definitions in one line.
 fun sum(a: Int, b: Int) = a + b
 
 
