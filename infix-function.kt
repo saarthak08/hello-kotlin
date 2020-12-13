@@ -13,7 +13,7 @@ Infix functions must satisfy the following requirements:
    */
 
 //Extension Function to Int Class. 
-//Extension Functions are basically static in nature &   
+//Extension Functions are basically static in nature.  
 infix fun Int.add (a:Int): Int {
     return this+a;
 }
