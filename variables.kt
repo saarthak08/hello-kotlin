@@ -30,6 +30,12 @@ fun main() {
     println(fooNullable?.length) // => null
     //Elvis Operator
     println(fooNullable?.length ?: -1) // => -1
+    fooNullable="abc"
 
-    
+    val f:String=fooNullable!!;
+    println("Now, String is not nullable. String: "+f);
+
+    val nullableList: List<Int?> = listOf(1, 2, null, 4)
+    val intList: List<Int> = nullableList.filterNotNull()
+    println(intList);
 }
