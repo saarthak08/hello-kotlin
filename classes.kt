@@ -22,7 +22,7 @@ class DemoClass(val demoArgConstructor:Int=420) {
         }
         set(value) {
             field=value;
-            this.privateVar = value as String;
+            this.privateVar = value!!;
             println("Private Var: $privateVar");
         }
  
